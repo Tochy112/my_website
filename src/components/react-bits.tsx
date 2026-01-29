@@ -135,7 +135,7 @@ const BubbleMenu = ({
   items,
   onItemClick,
 }: {
-  items: Array<{ id: string; icon: string; label: string }>;
+  items: Array<{ id: string; icon: any; label: string }>;
   onItemClick: (id: string) => void;
 }) => {
   const [active, setActive] = useState(0);

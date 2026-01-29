@@ -197,7 +197,7 @@ const Portfolio = () => {
 
             <div className="about-photo">
               <img
-                src="/profile-photo.jpg"
+                src="/profile.jpg"
                 alt="Profile Photo"
                 className="about-photo-image"
               />
@@ -312,7 +312,15 @@ const Portfolio = () => {
           <div className="tech-grid-icons">
             {techStack.map((tech, index) => (
               <div key={index} className="tech-icon-card">
-                <div className="tech-icon">{tech.icon}</div>
+                <div className="tech-icon">
+                  <div>
+                    <img
+                      src={tech.icon}
+                      alt="icons"
+                      className="stack-img"
+                    />
+                  </div>
+                </div>
                 <span className="tech-name">{tech.name}</span>
               </div>
             ))}
@@ -364,19 +372,19 @@ const Portfolio = () => {
             <div className="contact-links">
               <a href="mailto:your.email@example.com" className="contact-link">
                 <Mail size={24} />
-                <span>your.email@example.com</span>
+                <span>ukwuomatochi112@gmail.com</span>
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/tochy112"
                 className="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github size={24} />
-                <span>@yourusername</span>
+                <span>@tochy112</span>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/ukwuoma-tochukwu/"
                 className="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -385,13 +393,13 @@ const Portfolio = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://twitter.com/tochy0x"
                 className="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter size={24} />
-                <span>@yourusername</span>
+                <span>@tochy0x</span>
               </a>
             </div>
           </div>
