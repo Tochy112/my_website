@@ -83,7 +83,7 @@ const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleScroll = () => {
       if (ref.current) {
-        const rect = ref.current.getBoundingClientRect();
+        // const rect = ref.current.getBoundingClientRect();
         const scrolled = window.pageYOffset;
         setOffsetY(scrolled * 0.3);
       }
@@ -221,11 +221,11 @@ const CircularGallery = ({
     setCurrentRotation(rotation);
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-    const diff = e.clientX - startX;
-    setRotation(currentRotation + diff * 0.5);
-  };
+  // const handleMouseMove = (e: React.MouseEvent) => {
+  //   if (!isDragging) return;
+  //   const diff = e.clientX - startX;
+  //   setRotation(currentRotation + diff * 0.5);
+  // };
 
   const handleMouseUp = () => {
     setIsDragging(false);
