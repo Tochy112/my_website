@@ -1,12 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Mail,
-  Github,
-  Linkedin,
-  Twitter,
-  Menu,
-  X,
-} from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, Menu, X } from "lucide-react";
 import {
   AnimatedGallery,
   BubbleMenu,
@@ -190,6 +183,10 @@ const Portfolio = () => {
                 tech conferences, contributing to open source, or exploring the
                 latest developments in Web3.
               </p>
+
+              <div className="download-resume-button">
+                <button className="resume-button">Download Resume</button>
+              </div>
             </div>
 
             <div className="about-photo">
@@ -308,11 +305,7 @@ const Portfolio = () => {
               <div key={index} className="tech-icon-card">
                 <div className="tech-icon">
                   <div>
-                    <img
-                      src={tech.icon}
-                      alt="icons"
-                      className="stack-img"
-                    />
+                    <img src={tech.icon} alt="icons" className="stack-img" />
                   </div>
                 </div>
                 <span className="tech-name">{tech.name}</span>
