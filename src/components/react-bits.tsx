@@ -78,7 +78,7 @@ const ScrollFloat = ({
   className?: string;
 }) => {
   const [offsetY, setOffsetY] = useState(0);
-const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -278,7 +278,6 @@ const CircularGallery = ({
   );
 };
 
-
 const AnimatedGallery = ({ images }: any) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -305,21 +304,25 @@ const AnimatedGallery = ({ images }: any) => {
   return (
     <div className="animated-gallery">
       <div className="gallery-main">
-        <button className="gallery-nav prev" onClick={prevSlide} disabled={isAnimating}>
+        <button
+          className="gallery-nav prev"
+          onClick={prevSlide}
+          disabled={isAnimating}
+        >
           <ChevronLeft size={32} />
         </button>
-        
+
         <div className="gallery-track">
-          {images.map((img: any, i:any) => {
+          {images.map((img: any, i: any) => {
             const offset = i - currentIndex;
             const isActive = i === currentIndex;
-            
+
             return (
               <div
                 key={i}
-                className={`gallery-slide ${isActive ? 'active' : ''}`}
+                className={`gallery-slide ${isActive ? "active" : ""}`}
                 style={{
-                  transform: `translateX(${offset * 110}%) scale(${isActive ? 1 : 0.8})`,
+                  transform: `translateX(${Math.max(-1, Math.min(1, offset)) * 110}%) scale(${isActive ? 1 : 0.8})`,
                   opacity: Math.abs(offset) > 1 ? 0 : isActive ? 1 : 0.4,
                   zIndex: isActive ? 10 : 1,
                 }}
@@ -334,16 +337,20 @@ const AnimatedGallery = ({ images }: any) => {
           })}
         </div>
 
-        <button className="gallery-nav next" onClick={nextSlide} disabled={isAnimating}>
+        <button
+          className="gallery-nav next"
+          onClick={nextSlide}
+          disabled={isAnimating}
+        >
           <ChevronRight size={32} />
         </button>
       </div>
 
       <div className="gallery-dots">
-        {images.map((_:any, i:any) => (
+        {images.map((_: any, i: any) => (
           <button
             key={i}
-            className={`dot ${i === currentIndex ? 'active' : ''}`}
+            className={`dot ${i === currentIndex ? "active" : ""}`}
             onClick={() => {
               if (!isAnimating) {
                 setIsAnimating(true);
@@ -358,26 +365,26 @@ const AnimatedGallery = ({ images }: any) => {
   );
 };
 
-export const StaggeredMenu = ({ items, onClose }:any) => {
+export const StaggeredMenu = ({ items, onClose }: any) => {
   return (
     <div className="staggered-menu" onClick={onClose}>
-      <div className="staggered-menu-items" onClick={(e) => e.stopPropagation()}>
-        {items.map((item:any, index:any) => (
+      <div
+        className="staggered-menu-items"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {items.map((item: any, index: any) => (
           <div
             key={index}
             className="staggered-menu-item"
             onClick={item.onClick}
           >
-            <div className="staggered-menu-label">
-              {item.label}
-            </div>
+            <div className="staggered-menu-label">{item.label}</div>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
 
 export {
   GlitchText,
@@ -388,5 +395,5 @@ export {
   BubbleMenu,
   ScrollStack,
   CircularGallery,
-  AnimatedGallery
+  AnimatedGallery,
 };
