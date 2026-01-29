@@ -124,34 +124,34 @@ export const companies = [
 
 export const techStack = [
   // Frontend
-  { name: "React", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg", category: "frontend" },
+  { name: "React", icon: "https://files.svgcdn.io/material-icon-theme/react.svg", category: "frontend" },
   { name: "Next.js", icon: "https://files.svgcdn.io/teenyicons/nextjs-outline.svghttps://files.svgcdn.io/skill-icons/nextjs-dark.svg", category: "frontend" },
-  { name: "TypeScript", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg", category: "frontend" },
-  { name: "Tailwind", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg", category: "frontend" },
-  { name: "Vue.js", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg", category: "frontend" },
+  { name: "TypeScript", icon: "https://files.svgcdn.io/material-icon-theme/typescript.svg", category: "frontend" },
+  { name: "Tailwind", icon: "https://files.svgcdn.io/material-icon-theme/tailwindcss.svg", category: "frontend" },
+  { name: "Vue.js", icon: "https://files.svgcdn.io/devicon/vuejs.svg", category: "frontend" },
   
   // Backend
-  { name: "Node.js", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg", category: "backend" },
+  { name: "Node.js", icon: "https://files.svgcdn.io/material-icon-theme/nodejs.svg", category: "backend" },
   { name: "Express", icon: "https://files.svgcdn.io/skill-icons/expressjs-dark.svg", category: "backend" },
-  { name: "NestJS", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nestjs-colored.svg", category: "backend" },
+  { name: "NestJS", icon: "https://files.svgcdn.io/devicon/nestjs.svg", category: "backend" },
 
   // Blockchain
   { name: "Solidity", icon: "https://files.svgcdn.io/skill-icons/solidity.svg", category: "blockchain" },
-  { name: "Hardhat", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/hardhat-colored.svg", category: "blockchain" },
+  { name: "Hardhat", icon: "https://files.svgcdn.io/material-icon-theme/hardhat.svg", category: "blockchain" },
   { name: "Ethers.js", icon: "https://files.svgcdn.io/logos/ethers.svg", category: "blockchain" },
   { name: "Web3.js", icon: "https://files.svgcdn.io/logos/web3js.svg", category: "blockchain" },
   { name: "Solana", icon: "https://files.svgcdn.io/token-branded/solana.svg", category: "blockchain" },
   
   // Databases
-  { name: "PostgreSQL", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg", category: "database" },
-  { name: "MongoDB", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg", category: "database" },
+  { name: "PostgreSQL", icon: "https://files.svgcdn.io/logos/postgresql.svg", category: "database" },
+  { name: "MongoDB", icon: "https://files.svgcdn.io/devicon/mongodb.svg", category: "database" },
   { name: "Redis", icon: "https://files.svgcdn.io/skill-icons/redis-light.svg", category: "database" },
-  { name: "MySQL", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg", category: "database" },
+  { name: "MySQL", icon: "https://files.svgcdn.io/devicon/mysql.svg", category: "database" },
 
   // Tools
-  { name: "Docker", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg", category: "tools" },
-  { name: "Kubernetes", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kubernetes-colored.svg", category: "tools" },
+  { name: "Docker", icon: "https://files.svgcdn.io/devicon/docker.svg", category: "tools" },
+  { name: "Kubernetes", icon: "https://files.svgcdn.io/logos/kubernetes.svg", category: "tools" },
   { name: "AWS", icon: "https://files.svgcdn.io/logos/aws.svg", category: "tools" },
-  { name: "Azure", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/azure-colored.svg", category: "tools" },
-  { name: "Git", icon: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg", category: "tools" },
+  { name: "Azure", icon: "https://files.svgcdn.io/devicon/azure.svg", category: "tools" },
+  { name: "Git", icon: "https://files.svgcdn.io/devicon/git.svg", category: "tools" },
 ];

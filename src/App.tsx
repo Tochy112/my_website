@@ -4,9 +4,6 @@ import {
   Github,
   Linkedin,
   Twitter,
-  Briefcase,
-  Code,
-  Blocks,
   Menu,
   X,
 } from "lucide-react";
@@ -250,21 +247,18 @@ const Portfolio = () => {
               className={`project-tab ${activeCategory === "fullstack" ? "active" : ""}`}
               onClick={() => setActiveCategory("fullstack")}
             >
-              <Code size={20} />
               Full Stack
             </button>
             <button
               className={`project-tab ${activeCategory === "backend" ? "active" : ""}`}
               onClick={() => setActiveCategory("backend")}
             >
-              <Briefcase size={20} />
               Backend
             </button>
             <button
               className={`project-tab ${activeCategory === "blockchain" ? "active" : ""}`}
               onClick={() => setActiveCategory("blockchain")}
             >
-              <Blocks size={20} />
               Blockchain
             </button>
           </div>
