@@ -89,35 +89,35 @@ export const projects = {
 
 export const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+    src: "/pics-7.jpg",
+    alt: "Workshop",
+    caption: "Google I/O 2022",
+  },
+  {
+    src: "/pics-1.jpg",
+    alt: "Speaking",
+    caption: "Tech Talk 2023",
+  },
+  {
+    src: "/pics-4.jpeg",
     alt: "Tech Conference",
     caption: "Web3 Summit 2024",
   },
   {
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800",
-    alt: "Hackathon",
-    caption: "ETHGlobal Hackathon",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800",
-    alt: "Team Event",
-    caption: "Team Offsite",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800",
-    alt: "Speaking",
-    caption: "Tech Talk",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800",
-    alt: "Workshop",
-    caption: "Blockchain Workshop",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800",
+    src: "/pics-3.jpeg",
     alt: "Meetup",
-    caption: "Developer Meetup",
+    caption: "DevFest 2024",
   },
+   // {
+  //   src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800",
+  //   alt: "Hackathon",
+  //   caption: "ETHGlobal Hackathon",
+  // },
+  // {
+  //   src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800",
+  //   alt: "Team Event",
+  //   caption: "Team Offsite",
+  // },
 ];
 
 export const companies = [

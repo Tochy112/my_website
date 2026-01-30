@@ -170,14 +170,7 @@ const Portfolio = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate developer with expertise spanning my entire
-                <a
-                  onClick={() => scrollToSection("tech")}
-                  className="stack-anchor"
-                >
-                  {" "}
-                  technology stack.
-                </a>{" "}
+                I’m a passionate developer with broad expertise across modern technologies.
                 From crafting beautiful, responsive frontends to architecting
                 robust backend systems and contributing to innovative blockchain
                 solutions.
