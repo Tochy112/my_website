@@ -147,8 +147,8 @@ const Portfolio = () => {
               words={[
                 "FullStack Developer",
                 "Blockchain Engineer",
-                "Tech Enthusiast",
-                "Problem Solver",
+                "Tech support specialist",
+                "Product Builder",
               ]}
               className="rotating-role"
             />
@@ -170,18 +170,36 @@ const Portfolio = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate developer with expertise spanning the entire
-                technology stack. From crafting beautiful, responsive frontends
-                to architecting robust backend systems and building innovative
-                blockchain solutions, I thrive on solving complex problems and
-                bringing ideas to life.
+                I'm a passionate developer with expertise spanning my entire
+                <a
+                  onClick={() => scrollToSection("tech")}
+                  className="stack-anchor"
+                >
+                  {" "}
+                  technology stack.
+                </a>{" "}
+                From crafting beautiful, responsive frontends to architecting
+                robust backend systems and contributing to innovative blockchain
+                solutions.
               </p>
               <p>
                 With years of experience in the industry, I've had the privilege
-                of working with amazing teams and contributing to projects that
-                make a real difference. When I'm not coding, you'll find me at
-                tech conferences, contributing to open source, or exploring the
-                latest developments in Web3.
+                of working with amazing teams and contributing to real world
+                products.
+              </p>
+              <p>
+                When I'm not coding, i'm either attending tech conferences,
+                gaming, watching a movie or hanging out. I also write articles
+                occassionally on
+                <a
+                  href="https://tochy0x.medium.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="stack-anchor"
+                >
+                  {" "}
+                  medium
+                </a>
               </p>
 
               <div className="download-resume-button">
@@ -223,6 +241,8 @@ const Portfolio = () => {
 
                 <div className="timeline-content-right">
                   <div className="timeline-year">{job.period}</div>
+                  <h3 className="timeline-title-mobile">{job.title}</h3>
+                  <p className="timeline-company-mobile">{job.company}</p>
                   <p className="timeline-description">{job.description}</p>
                 </div>
               </div>

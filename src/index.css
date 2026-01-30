@@ -373,6 +373,13 @@ body {
   margin-bottom: 30px;
 }
 
+.stack-anchor {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
@@ -705,8 +712,21 @@ section {
   font-size: 1rem;
 }
 
-/* Mobile responsive */
+/* Hide mobile-specific elements on desktop */
+.timeline-title-mobile,
+.timeline-company-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .timeline-title-mobile,
+  .timeline-company-mobile {
+    display: block;
+  }
+}
+
+/* Mobile responsive */
+/* @media (max-width: 768px) {
   .timeline-item {
     grid-template-columns: 40px 1fr;
     gap: 1.5rem;
@@ -731,7 +751,60 @@ section {
   .timeline-title {
     font-size: 1.4rem;
   }
+} */
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    grid-template-columns: 40px 1fr;
+    gap: 1.5rem;
+  }
+
+  .timeline-content-left {
+    display: none;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-center {
+    align-items: flex-start;
+  }
+  
+  .timeline-content-right {
+    padding-left: 0;
+  }
+
+  .timeline-year {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Show title and company on mobile */
+  .timeline-content-right .timeline-title-mobile {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .timeline-content-right .timeline-company-mobile {
+    font-size: 1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .timeline-description {
+    font-size: 0.95rem;
+  }
 }
+
 
 /* Projects Section - New Card Design */
 .projects-section {

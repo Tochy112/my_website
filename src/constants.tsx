@@ -19,25 +19,32 @@ export const menuItems = [
 
 export const workHistory = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovations Inc.",
-    period: "2022 - Present",
-    description:
-      "Leading development of scalable web applications using React, Node.js, and cloud technologies.",
-  },
-  {
     title: "Blockchain Developer",
-    company: "Crypto Solutions",
-    period: "2020 - 2022",
+    company: "Genesys Tech hub - internship",
+    period: "2024 - 2025",
     description:
-      "Built smart contracts and DeFi applications on Ethereum and Polygon networks.",
+    "Built smart contracts and Decentralized applications on Ethereum and Base networks.",
   },
   {
-    title: "Backend Engineer",
-    company: "StartupHub",
-    period: "2018 - 2020",
+    title: "FullStack Developer",
+    company: "Jackocoins Ltd - fulltime",
+    period: "2023 - 2025",
     description:
-      "Designed and implemented RESTful APIs and microservices architecture.",
+      "Contributed to the development of scalable web applications using Vue, Node.js, ether.js and Cloud technologies.",
+  },
+  {
+    title: "Fullstack Developer",
+    company: "Anhydraze Limited - internship",
+    period: "2022-2023",
+    description:
+      "Developed and maintained full-stack web applications using javascript and laravel.",
+  },
+  {
+    title: "Frontend Developer",
+    company: "Oluaka Institute - internship",
+    period: "2021",
+    description:
+      "Developed and maintained frontend web applications using modern JavaScript frameworks.",
   }
 ];
 
