@@ -94,7 +94,7 @@ export const galleryImages = [
     caption: "Google I/O 2022",
   },
   {
-    src: "/pics-1.jpg",
+    src: "/pics-8.png",
     alt: "Speaking",
     caption: "Tech Talk 2023",
   },
