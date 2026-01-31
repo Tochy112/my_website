@@ -77,11 +77,11 @@ export const projects = {
   ],
   blockchain: [
     {
-      name: "NFT Marketplace",
+      name: "Truth Check",
       category: "Web3",
-      tech: "Solidity, React, Web3.js",
-      description: "Decentralized marketplace for digital art with smart contract integration",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800"
+      tech: "Solidity, React, ether.js, Wagmi",
+      description: "A decentralized information verification platform built on Base chain.",
+      image: "/truth-check.png"
     },
     // Add more projects...
   ],
