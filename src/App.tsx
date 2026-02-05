@@ -183,7 +183,7 @@ const Portfolio = () => {
               <p>
                 When I'm not coding, i'm either attending tech conferences,
                 gaming, watching a movie or hanging out. I also write articles
-                occassionally on
+                on
                 <a
                   href="https://tochy0x.medium.com/"
                   target="_blank"
@@ -191,7 +191,7 @@ const Portfolio = () => {
                   className="stack-anchor"
                 >
                   {" "}
-                  medium
+                  medium.
                 </a>
               </p>
 

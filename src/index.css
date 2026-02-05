@@ -853,6 +853,7 @@ section {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   background: var(--color-primary);
+  border: 2px solid var(--color-primary);
   color: #fff;
   border-radius: 30px;
   font-weight: 600;
@@ -1462,11 +1463,12 @@ html {
 .staggered-menu-items {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
   max-width: 400px;
   text-align: center;
 }
+
 
 .staggered-menu-item {
   /* background: var(--color-dark-card); */
@@ -1481,8 +1483,7 @@ html {
   opacity: 0;
   transform: translateX(-30px);
   animation: slideInStagger 0.4s forwards;
-  text-align: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .staggered-menu-item:nth-child(1) {
@@ -1527,7 +1528,7 @@ html {
 }
 
 .staggered-menu-label {
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: var(--color-text-primary);
   text-transform: uppercase;
