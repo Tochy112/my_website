@@ -310,7 +310,7 @@ const Portfolio = () => {
                     <img src={project.image} alt={project.name} />
                   </div>
                   <div className="project-content">
-                    <span className="project-category">{project.category}</span>
+                    {/* <span className="project-category">{project.category}</span> */}
                     <h3 className="project-name-new">{project.name}</h3>
                     <p className="project-description-new">
                       {project.description}

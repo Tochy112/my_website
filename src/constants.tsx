@@ -58,11 +58,11 @@ export const projects = {
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800"
     },
     {
-      name: "E-Commerce Platform",
+      name: "Jackocoins",
       category: "Web Development",
-      tech: "React, Node.js, MongoDB",
-      description: "Full-featured online store with payment integration and real-time inventory management",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800"
+      tech: "Vue, Node.js, MySQL, Ethers.js",
+      description: "A cryptocurrency exchange platform built with Vue and Node.js, featuring real-time price tracking and secure transactions.",
+      image: "./Macbook-Air-www.jackocoins.com.png"
     },
   ],
   backend: [
@@ -81,7 +81,7 @@ export const projects = {
       category: "Web3",
       tech: "Solidity, React, ether.js, Wagmi",
       description: "A decentralized information verification platform built on Base chain.",
-      image: "/truth-check.png"
+      image: "/Macbook-Air-truthchecker.vercel.app.png"
     },
     // Add more projects...
   ],
