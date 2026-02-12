@@ -17,6 +17,31 @@ import {
   techStack,
   workHistory,
 } from "./constants";
+import { useScroll } from "./scroll";
+import { motion } from "framer-motion";
+import { genAnimation } from "./animate";
+import type { AnimatedSectionProps } from "./types";
+
+function AnimatedSection({
+  id,
+  className,
+  thresh = 0.1,
+  children,
+}: AnimatedSectionProps) {
+  const [element, controls] = useScroll(thresh);
+
+  return (
+    <section id={id} className={className} ref={element}>
+      <motion.div
+        variants={genAnimation}
+        animate={controls}
+        transition={{ delay: 0.03, type: "tween", duration: 0.8 }}
+      >
+        {children}
+      </motion.div>
+    </section>
+  );
+}
 
 const Portfolio = () => {
   const [loading, setLoading] = useState(true);
@@ -162,7 +187,7 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="about-section">
+      <AnimatedSection id="about" className="about-section">
         <div className="section-container">
           <h2 className="section-title">
             <SplitText>About Me</SplitText>
@@ -170,10 +195,10 @@ const Portfolio = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I’m a passionate developer with broad expertise across modern technologies.
-                From crafting beautiful, responsive frontends to architecting
-                robust backend systems and contributing to innovative blockchain
-                solutions.
+                I’m a passionate developer with broad expertise across modern
+                technologies. From crafting beautiful, responsive frontends to
+                architecting robust backend systems and contributing to
+                innovative blockchain solutions.
               </p>
               <p>
                 With years of experience in the industry, I've had the privilege
@@ -209,10 +234,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Work History */}
-      <section id="work" className="work-section">
+      <AnimatedSection id="work" className="work-section">
         <div className="section-container">
           <h2 className="section-title">
             <SplitText>Work History</SplitText>
@@ -242,10 +267,10 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Projects Section */}
-      <section id="projects" className="projects-section">
+      <AnimatedSection id="projects" className="projects-section">
         <div className="section-container">
           <h2 className="section-title">
             <SplitText>Projects</SplitText>
@@ -303,10 +328,10 @@ const Portfolio = () => {
             )}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Tech Stack */}
-      <section id="tech" className="tech-section">
+      <AnimatedSection id="tech" className="tech-section">
         <div className="section-container">
           <h2 className="section-title">
             <SplitText>Tech Stack</SplitText>
@@ -326,10 +351,10 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Photo Gallery */}
-      <section id="gallery" className="gallery-section">
+      <AnimatedSection id="gallery" className="gallery-section">
         <div className="section-container">
           <h2 className="section-title">
             <SplitText>Photos Speak</SplitText>
@@ -339,7 +364,7 @@ const Portfolio = () => {
           </p>
           <AnimatedGallery images={galleryImages} />
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Companies */}
       {/* <section id="companies" className="companies-section">
@@ -359,7 +384,7 @@ const Portfolio = () => {
       </section> */}
 
       {/* Contact Section */}
-      <section id="contact" className="contact-section">
+      <AnimatedSection id="contact" className="contact-section">
         <div className="section-container">
           <h2 className="section-title">
             <SplitText>Get In Touch</SplitText>
@@ -404,7 +429,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Footer */}
       <footer className="footer">
