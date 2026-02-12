@@ -51,18 +51,20 @@ export const workHistory = [
 export const projects = {
   fullstack: [
     {
-      name: "E-Commerce Platform",
+      name: "Quivy",
       category: "Web Development",
-      tech: "React, Node.js, MongoDB",
-      description: "Full-featured online store with payment integration and real-time inventory management",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800"
+      tech: "React, Node.js, Socket.io, PostgreSQL",
+      description: "Interactive platform for creating and managing campaigns and promotions, built with React and Node.js, featuring real-time updates and user-friendly interface.",
+      image: "./Macbook-Air-www.quivy.io.png",
+      link: "https://www.quivy.io"
     },
     {
       name: "Jackocoins",
       category: "Web Development",
       tech: "Vue, Node.js, MySQL, Ethers.js",
       description: "A cryptocurrency exchange platform built with Vue and Node.js, featuring real-time price tracking and secure transactions.",
-      image: "./Macbook-Air-www.jackocoins.com.png"
+      image: "./Macbook-Air-www.jackocoins.com.png",
+      link: "https://www.jackocoins.com"
     },
   ],
   backend: [
@@ -71,7 +73,8 @@ export const projects = {
       category: "Microservices",
       tech: "Node.js, GraphQL",
       description: "Unified API layer for microservices with rate limiting and authentication",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+      link: ""
     },
     // Add more projects...
   ],
@@ -81,7 +84,8 @@ export const projects = {
       category: "Web3",
       tech: "Solidity, React, ether.js, Wagmi",
       description: "A decentralized information verification platform built on Base chain.",
-      image: "/Macbook-Air-truthchecker.vercel.app.png"
+      image: "/Macbook-Air-truthchecker.vercel.app.png",
+      link: "https://truthchecker.vercel.app"
     },
     // Add more projects...
   ],

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Mail, Github, Linkedin, Twitter, Menu, X } from "lucide-react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import {
   AnimatedGallery,
   BubbleMenu,
@@ -311,7 +313,22 @@ const Portfolio = () => {
                   </div>
                   <div className="project-content">
                     {/* <span className="project-category">{project.category}</span> */}
-                    <h3 className="project-name-new">{project.name}</h3>
+                    <div className="project-title">
+                      <h3 className="project-name-new">{project.name}</h3>
+                      <div>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {project.category === "Microservices" ? (
+                            <FaGithub className="external-link-icon" size={30} />
+                          ) : (
+                            <FaExternalLinkAlt className="external-link-icon"/>
+                          )}
+                        </a>
+                      </div>
+                    </div>
                     <p className="project-description-new">
                       {project.description}
                     </p>

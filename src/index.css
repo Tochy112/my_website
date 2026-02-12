@@ -976,6 +976,19 @@ section {
   gap: 0.5rem;
 }
 
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.project-title a {
+  color: #ffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
 .tech-badge {
   padding: 0.4rem 0.9rem;
   background: rgba(255, 107, 53, 0.1);
