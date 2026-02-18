@@ -223,7 +223,9 @@ const Portfolio = () => {
               </p>
 
               <div className="download-resume-button">
-                <button className="resume-button">Download Resume</button>
+                <button className="resume-button">
+                  <a href="/software-engineer-cv.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+                </button>
               </div>
             </div>
 
@@ -412,7 +414,7 @@ const Portfolio = () => {
           </p>
           <div className="contact-content">
             <div className="contact-links">
-              <a href="mailto:your.email@example.com" className="contact-link">
+              <a href="mailto:ukwuomatochi112@gmail.com" className="contact-link">
                 <Mail size={24} />
                 <span>ukwuomatochi112@gmail.com</span>
               </a>

@@ -861,6 +861,10 @@ section {
   cursor: pointer;
   font-size: 1rem;
 }
+.resume-button a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .projects-grid-cards {
   display: grid;

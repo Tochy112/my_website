@@ -69,12 +69,12 @@ export const projects = {
   ],
   backend: [
     {
-      name: "API Gateway",
+      name: "Booking Microservice",
       category: "Microservices",
-      tech: "Node.js, GraphQL",
-      description: "Unified API layer for microservices with rate limiting and authentication",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
-      link: ""
+      tech: "Node.js, PostgreSQL, Redis, RabbitMQ",
+      description: "A comprehensive booking management system built with NestJS, featuring real-time notifications, background job processing, and a robust microservices architecture.",
+      image: "./booking-microservice.jpg",
+      link: "https://github.com/Tochy112/booking-microservice"
     },
     // Add more projects...
   ],
