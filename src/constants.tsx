@@ -7,8 +7,8 @@ import { RiContactsBook3Line } from "react-icons/ri";
 import { GrInfo } from "react-icons/gr";
 
 export const menuItems = [
-  { id: "hero", label: "Home", icon:  <HiOutlineHome />},
-  { id: "about", label: "About",icon: <GrInfo />},
+  { id: "hero", label: "Home", icon: <HiOutlineHome /> },
+  { id: "about", label: "About", icon: <GrInfo /> },
   { id: "work", label: "Work", icon: <MdWorkHistory /> },
   { id: "projects", label: "Projects", icon: <GrProjects /> },
   { id: "tech", label: "Stack", icon: <FaStackOverflow /> },
@@ -23,7 +23,7 @@ export const workHistory = [
     company: "Genesys Tech hub - internship",
     period: "2024 - 2025",
     description:
-    "Built smart contracts and Decentralized applications on Ethereum and Base networks.",
+      "Built smart contracts and Decentralized applications on Ethereum and Base networks.",
   },
   {
     title: "FullStack Developer",
@@ -45,7 +45,7 @@ export const workHistory = [
     period: "2021",
     description:
       "Developed and maintained frontend web applications using modern JavaScript frameworks.",
-  }
+  },
 ];
 
 export const projects = {
@@ -54,17 +54,21 @@ export const projects = {
       name: "Quivy",
       category: "Web Development",
       tech: "React, Node.js, Socket.io, PostgreSQL",
-      description: "Interactive platform for creating and managing campaigns and promotions, built with React and Node.js, featuring real-time updates and user-friendly interface.",
+      description:
+        "Interactive platform for creating and managing campaigns and promotions, built with React and Node.js, featuring real-time updates and user-friendly interface.",
       image: "./quivy.png",
-      link: "https://www.quivy.io"
+      link: "https://www.quivy.io",
+      type: "website",
     },
     {
       name: "Jackocoins",
       category: "Web Development",
       tech: "Vue, Node.js, MySQL, Ethers.js",
-      description: "A cryptocurrency exchange platform built with Vue and Node.js, featuring real-time price tracking and secure transactions.",
+      description:
+        "A cryptocurrency exchange platform built with Vue and Node.js, featuring real-time price tracking and secure transactions.",
       image: "./jackocoins.png",
-      link: "https://www.jackocoins.com"
+      link: "https://www.jackocoins.com",
+      type: "website",
     },
   ],
   backend: [
@@ -72,9 +76,11 @@ export const projects = {
       name: "Booking Microservice",
       category: "Microservices",
       tech: "Node.js, PostgreSQL, Redis, RabbitMQ",
-      description: "A comprehensive booking management system built with NestJS, featuring real-time notifications, background job processing, and a robust microservices architecture.",
+      description:
+        "A comprehensive booking management system built with NestJS, featuring real-time notifications, background job processing, and a robust microservices architecture.",
       image: "./booking-microservice.jpg",
-      link: "https://github.com/Tochy112/booking-microservice"
+      link: "https://github.com/Tochy112/booking-microservice",
+      type: "github",
     },
     // Add more projects...
   ],
@@ -83,9 +89,21 @@ export const projects = {
       name: "Truth Check",
       category: "Web3",
       tech: "Solidity, React, ether.js, Wagmi",
-      description: "A decentralized information verification platform built on Base chain.",
+      description:
+        "A decentralized information verification platform built on Base chain.",
       image: "/truthchecker.png",
-      link: "https://truthchecker.vercel.app"
+      link: "https://truthchecker.vercel.app",
+      type: "website",
+    },
+    {
+      name: "G-Naira",
+      category: "Web3",
+      tech: "Solidity, Hardhat, Ethers.js",
+      description:
+        "G-Naira (gNGN) is an ERC20-compliant token deployed on the Ethereum network with advanced multi-signature governance capabilities.",
+      image: "/g-naira.jpg",
+      link: "https://github.com/Tochy112/G-Naira",
+      type: "github",
     },
     // Add more projects...
   ],
@@ -112,7 +130,7 @@ export const galleryImages = [
     alt: "Meetup",
     caption: "DevFest 2024",
   },
-   // {
+  // {
   //   src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800",
   //   alt: "Hackathon",
   //   caption: "ETHGlobal Hackathon",
@@ -135,34 +153,122 @@ export const companies = [
 
 export const techStack = [
   // Frontend
-  { name: "React", icon: "https://files.svgcdn.io/material-icon-theme/react.svg", category: "frontend" },
-  { name: "Next.js", icon: "https://files.svgcdn.io/teenyicons/nextjs-outline.svghttps://files.svgcdn.io/skill-icons/nextjs-dark.svg", category: "frontend" },
-  { name: "TypeScript", icon: "https://files.svgcdn.io/material-icon-theme/typescript.svg", category: "frontend" },
-  { name: "Tailwind", icon: "https://files.svgcdn.io/material-icon-theme/tailwindcss.svg", category: "frontend" },
-  { name: "Vue.js", icon: "https://files.svgcdn.io/devicon/vuejs.svg", category: "frontend" },
-  
+  {
+    name: "React",
+    icon: "https://files.svgcdn.io/material-icon-theme/react.svg",
+    category: "frontend",
+  },
+  {
+    name: "Next.js",
+    icon: "https://files.svgcdn.io/teenyicons/nextjs-outline.svghttps://files.svgcdn.io/skill-icons/nextjs-dark.svg",
+    category: "frontend",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://files.svgcdn.io/material-icon-theme/typescript.svg",
+    category: "frontend",
+  },
+  {
+    name: "Tailwind",
+    icon: "https://files.svgcdn.io/material-icon-theme/tailwindcss.svg",
+    category: "frontend",
+  },
+  {
+    name: "Vue.js",
+    icon: "https://files.svgcdn.io/devicon/vuejs.svg",
+    category: "frontend",
+  },
+
   // Backend
-  { name: "Node.js", icon: "https://files.svgcdn.io/material-icon-theme/nodejs.svg", category: "backend" },
-  { name: "Express", icon: "https://files.svgcdn.io/skill-icons/expressjs-dark.svg", category: "backend" },
-  { name: "NestJS", icon: "https://files.svgcdn.io/devicon/nestjs.svg", category: "backend" },
+  {
+    name: "Node.js",
+    icon: "https://files.svgcdn.io/material-icon-theme/nodejs.svg",
+    category: "backend",
+  },
+  {
+    name: "Express",
+    icon: "https://files.svgcdn.io/skill-icons/expressjs-dark.svg",
+    category: "backend",
+  },
+  {
+    name: "NestJS",
+    icon: "https://files.svgcdn.io/devicon/nestjs.svg",
+    category: "backend",
+  },
 
   // Blockchain
-  { name: "Solidity", icon: "https://files.svgcdn.io/skill-icons/solidity.svg", category: "blockchain" },
-  { name: "Hardhat", icon: "https://files.svgcdn.io/material-icon-theme/hardhat.svg", category: "blockchain" },
-  { name: "Ethers.js", icon: "https://files.svgcdn.io/logos/ethers.svg", category: "blockchain" },
-  { name: "Web3.js", icon: "https://files.svgcdn.io/logos/web3js.svg", category: "blockchain" },
-  { name: "Solana", icon: "https://files.svgcdn.io/token-branded/solana.svg", category: "blockchain" },
-  
+  {
+    name: "Solidity",
+    icon: "https://files.svgcdn.io/skill-icons/solidity.svg",
+    category: "blockchain",
+  },
+  {
+    name: "Hardhat",
+    icon: "https://files.svgcdn.io/material-icon-theme/hardhat.svg",
+    category: "blockchain",
+  },
+  {
+    name: "Ethers.js",
+    icon: "https://files.svgcdn.io/logos/ethers.svg",
+    category: "blockchain",
+  },
+  {
+    name: "Web3.js",
+    icon: "https://files.svgcdn.io/logos/web3js.svg",
+    category: "blockchain",
+  },
+  {
+    name: "Solana",
+    icon: "https://files.svgcdn.io/token-branded/solana.svg",
+    category: "blockchain",
+  },
+
   // Databases
-  { name: "PostgreSQL", icon: "https://files.svgcdn.io/logos/postgresql.svg", category: "database" },
-  { name: "MongoDB", icon: "https://files.svgcdn.io/devicon/mongodb.svg", category: "database" },
-  { name: "Redis", icon: "https://files.svgcdn.io/skill-icons/redis-light.svg", category: "database" },
-  { name: "MySQL", icon: "https://files.svgcdn.io/devicon/mysql.svg", category: "database" },
+  {
+    name: "PostgreSQL",
+    icon: "https://files.svgcdn.io/logos/postgresql.svg",
+    category: "database",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://files.svgcdn.io/devicon/mongodb.svg",
+    category: "database",
+  },
+  {
+    name: "Redis",
+    icon: "https://files.svgcdn.io/skill-icons/redis-light.svg",
+    category: "database",
+  },
+  {
+    name: "MySQL",
+    icon: "https://files.svgcdn.io/devicon/mysql.svg",
+    category: "database",
+  },
 
   // Tools
-  { name: "Docker", icon: "https://files.svgcdn.io/devicon/docker.svg", category: "tools" },
-  { name: "Kubernetes", icon: "https://files.svgcdn.io/logos/kubernetes.svg", category: "tools" },
-  { name: "AWS", icon: "https://files.svgcdn.io/logos/aws.svg", category: "tools" },
-  { name: "Azure", icon: "https://files.svgcdn.io/devicon/azure.svg", category: "tools" },
-  { name: "Git", icon: "https://files.svgcdn.io/devicon/git.svg", category: "tools" },
+  {
+    name: "Docker",
+    icon: "https://files.svgcdn.io/devicon/docker.svg",
+    category: "tools",
+  },
+  {
+    name: "Kubernetes",
+    icon: "https://files.svgcdn.io/logos/kubernetes.svg",
+    category: "tools",
+  },
+  {
+    name: "AWS",
+    icon: "https://files.svgcdn.io/logos/aws.svg",
+    category: "tools",
+  },
+  {
+    name: "Azure",
+    icon: "https://files.svgcdn.io/devicon/azure.svg",
+    category: "tools",
+  },
+  {
+    name: "Git",
+    icon: "https://files.svgcdn.io/devicon/git.svg",
+    category: "tools",
+  },
 ];

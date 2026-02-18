@@ -323,7 +323,7 @@ const Portfolio = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {project.category === "Microservices" ? (
+                          {project.type === "github" ? (
                             <FaGithub className="external-link-icon" size={30} />
                           ) : (
                             <FaExternalLinkAlt className="external-link-icon"/>
